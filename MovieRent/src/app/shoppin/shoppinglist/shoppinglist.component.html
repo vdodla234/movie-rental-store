@@ -1,0 +1,13 @@
+<div class="row">
+    <div class="col-md-12">
+      <app-shoppingedit></app-shoppingedit>
+    </div>
+    <hr>
+    <ul class="list-group">
+      <a class="listgroup-item" style="cursor: pointer"
+      *ngFor="let ite of items">
+      {{ite.price}} ({{ite.name}}) <br>
+    </a>
+    </ul>
+    <p>shoppinglist</p>
+  </div>

@@ -1,0 +1,46 @@
+<div class="row">
+    <div class="col-xs-12">
+        <button class="btn btn-success">New Movie</button>
+        <hr>
+
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <a href="#" class="list-group-item clearfix" *ngFor="let mov of movies">
+                    <span class="pull-top">
+                            <img src="{{mov.imagepath}}" alt=""class="img-responsive">
+    
+                        </span>
+                <div class="pull-left">
+                    <h4 class="list-group-item-heading">
+                        {{mov.name}}
+
+
+                    </h4>
+                    <p class="list-group-item-text">
+                        Description:{{mov.discription}}
+
+                    </p>
+                    <p class="list-group-item-text">
+                            Year of release:{{mov.yearofrelease}}
+                        </p>
+                        <p class="list-group-item-text">
+                                Rating:{{mov.rating}}
+                            </p>
+                            <p class="list-group-item-text">
+                                    Additionaldetails:{{mov.additionaldetails}}
+                                </p>
+                                <p class="list-group-item-text">
+                                       Genere: {{mov.type}}
+                        
+                                    </p>
+                </div>
+                
+                    
+
+            
+            </a>
+            <app-movieitem></app-movieitem>
+        </div>
+    </div>
+</div>
